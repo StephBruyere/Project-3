@@ -1,0 +1,131 @@
+.navbar-default .navbar-nav>li>a {
+    color: #E1E0DE;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+/* Change default Bootstrap hover styles */
+
+a:active {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #E1E0DE;
+    background-color: #59699C;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #E1E0DE;
+    background-color: #59699C;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #59699C;
+    border-color: #adadad;
+}
+
+.navbar-default .navbar-brand:hover {
+    background-color: #232F3E;
+}
+
+/* Nav Styles*/
+
+.container {
+    width: 100%;
+    padding: 0;
+
+}
+
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #232F3E;
+    border-color: transparent;
+}
+
+.navbar-brand {
+    margin-left: 0px;
+    padding-left: 0;
+    padding-top: 0px;
+    margin-top:-5%;
+    width: 25%;
+    background-color: white;
+    max-width: 260px;
+}
+
+.navbar-brand>img {
+    z-index: 1;
+    margin: 0px;
+    height: auto;
+    padding: 5%;
+    padding-left: 15%;;
+    width: 115%;
+    background-color: white;
+    float: left;
+}
+
+.navbar-right~.navbar-right {
+    margin-right: -20%;
+}
+
+.navbar-nav {
+    width: 50%;
+}
+
+.spacer {
+    margin-left: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-right: 1px solid #5F626B;
+}
+
+#navbar1 {
+    background-color: #232F3E;
+    color: #E1E0DE;
+    padding-left: 0px;
+    padding-right: 5%;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.navbar-header {
+    background-color: #232F3E;
+    color: #E1E0DE;
+    width: 15%;
+    padding-left: 0;
+    margin-left: 0px;
+
+}
+
+.form-control {
+    margin-left: 15%;
+    border-color: white;
+}
+
+.btnspaces {
+    width: 75px;
+    background-color: #59699C;
+    border: 0px;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btnIcon {
+    width: 45%;
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px){
+.navbar-header {
+  float:right;
+  padding-right:5%;
+
+}
+
+}
