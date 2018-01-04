@@ -1,7 +1,7 @@
 import React from "react";
 import "./adminForm.css";
 
-const Form = props =>
+const adminForm = props =>
 <form className="search">
     <div className="form-group newContainer">
     <div className="header2">Enter a New Product</div>
@@ -66,4 +66,4 @@ const Form = props =>
     </div>
   </form>
 
-export default Form;
+export default adminForm;
