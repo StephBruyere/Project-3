@@ -13,8 +13,7 @@ var Example = React.createClass({
     , submitted: null
     }
   }
-
-, render: function() {
+render: function() {
     var submitted
     if (this.state.submitted !== null) {
       submitted = <div className="alert alert-success">
@@ -57,13 +56,13 @@ var Example = React.createClass({
     </div>
   }
 
-, handleChange: function(field, e) {
+handleChange: function(field, e) {
     var nextState = {}
     nextState[field] = e.target.checked
     this.setState(nextState)
   }
 
-, handleSubmit: function() {
+handleSubmit: function() {
     if (this.refs.contactForm.isValid()) {
       this.setState({submitted: this.refs.contactForm.getFormData()})
     }
@@ -81,11 +80,11 @@ var ContactForm = React.createClass({
     }
   }
 
-, getInitialState: function() {
+getInitialState: function() {
     return {errors: {}}
   }
 
-, isValid: function() {
+isValid: function() {
     var fields = ['firstName', 'lastName', 'phoneNumber', 'address', 'city', 'state', 'zipCode']
     if (this.props.email) fields.push('email')
     if (this.props.question) fields.push('question')
@@ -107,7 +106,7 @@ var ContactForm = React.createClass({
     return isValid
   }
 
-, getFormData: function() {
+getFormData: function() {
     var data = {
       firstName: this.refs.firstName.getDOMNode().value
     , lastName: this.refs.lastName.getDOMNode().value
@@ -123,7 +122,7 @@ var ContactForm = React.createClass({
     return data
   }
 
-, render: function() {
+render: function() {
     return <div className="form-horizontal">
       {this.renderTextInput('firstName', 'First Name')}
       {this.renderTextInput('lastName', 'Last Name')}
@@ -141,19 +140,19 @@ var ContactForm = React.createClass({
     </div>
   }
 
-, renderTextInput: function(id, label) {
+renderTextInput: function(id, label) {
     return this.renderField(id, label,
       <input type="text" className="form-control" id={id} ref={id}/>
     )
   }
 
-, renderTextarea: function(id, label) {
+renderTextarea: function(id, label) {
     return this.renderField(id, label,
       <textarea className="form-control" id={id} ref={id}/>
     )
   }
 
-, renderSelect: function(id, label, values) {
+renderSelect: function(id, label, values) {
     var options = values.map(function(value) {
       return <option value={value}>{value}</option>
     })
@@ -164,7 +163,7 @@ var ContactForm = React.createClass({
     )
   }
 
-, renderRadioInlines: function(id, label, kwargs) {
+renderRadioInlines: function(id, label, kwargs) {
     var radios = kwargs.values.map(function(value) {
       var defaultChecked = (value == kwargs.defaultCheckedValue)
       return <label className="radio-inline">
@@ -175,7 +174,7 @@ var ContactForm = React.createClass({
     return this.renderField(id, label, radios)
   }
 
-, renderField: function(id, label, field) {
+renderField: function(id, label, field) {
     return <div className={$c('form-group', {'has-error': id in this.state.errors})}>
       <label htmlFor={id} className="col-sm-4 control-label">{label}</label>
       <div className="col-sm-6">
