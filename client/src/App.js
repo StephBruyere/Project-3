@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Home from "./pages/home";
+import Contact from "./pages/contact";
 
 
 class App extends Component {
@@ -13,7 +14,8 @@ class App extends Component {
       <div className="App">
       <Navbar />
       <Switch>
-      <Home /> 
+      <Route exact path="/" component={Home} /> 
+      <Route exact path="/contact" component={Contact} /> 
       </Switch>    
       <Footer />
       </div>

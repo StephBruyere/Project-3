@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 import Login from "../../components/login";
 
@@ -25,9 +26,12 @@ const Nav = () =>
       <button type="submit" class="btn btn-default btnspaces"> <img class= "btnIcon" src = "./assets/imgs/magnifier.png"/></button>
     </form>
       <ul class="nav navbar-nav navbar-right">
-        <li class="spacer"><a href="#">JETS</a></li>
-        <li class="spacer"><a href="#">NON-JETS</a></li>
-        <li><a href="#">CONTACT</a></li>
+      <li className={window.location.pathname === "/jets" ? "active" : ""}>
+      <Link to="/contact">JETS</Link></li>
+      <li className= {window.location.pathname === "/non-jets" ? "active" : ""}>
+      <Link to="/contact">NON-JETS</Link></li>
+        <li className= {window.location.pathname === "/contact" ? "active" : ""}>
+        <Link to="/contact">CONTACT</Link></li>
       </ul>
   </div>
   </div>
