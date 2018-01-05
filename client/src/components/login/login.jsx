@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./login.css";
+import { register } from "../../components/register";
 
 const Login = () =>
 <div className="container login">
@@ -23,8 +24,8 @@ const Login = () =>
          </form>
        </div>
       </li>
-      <li className={window.location.pathname === "/register" ? "active" : ""}>
-      <Link to="/register">REGISTER</Link></li>
+    {/* Trigger the modal with a button */}
+      <button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">REGISTER</button>
       <li className="loginItems"><a href="#"><img className= "cartIcon" src = "./assets/imgs/cart.png"/>CART</a></li>     
     </ul> 
     </div>
