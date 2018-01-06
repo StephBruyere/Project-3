@@ -12,29 +12,22 @@ a {
     padding:0px;
 }
 
+button.formLogin {
+    background-color:white;
+    border-color:transparent;
+    margin-top:13px;
+}
+
 .form {
     padding:15px;
     font-family: 'Roboto', sans-serif !important;
     background-color:#E1E0DE;
 }
 
-input {
-    width:200px;
-    height:35px;
-    padding-left:5%;
-    border-radius: 3px;
-    border-color:black;
-    border-style: solid;
-    background-color: white;
-    border-width: 0px;
-    border-style: none;
-    border-color: none;
-    border-image: none;
-}
 
 .navbar-nav>li>a {
     color: #232F3E;  
-    padding-top:15px;
+    padding-top:14px;
 }
 
 .cartIcon {
@@ -71,18 +64,20 @@ input {
 #navbar2 {
     margin-right:-7%;
 }
+.navbar-text {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
 
 @media screen and (max-width: 768px) and (min-width: 641px){
+
+    #navbar2 {
+        margin-right:0px !important;
+        margin-top:5px;
+    }
     .cartIcon {
         display: none;
-    }
-    .navbar-nav {
-        width:30%;
-    }
-
-    .container {
-        height:0px;
     }
 
     .paypal {
@@ -93,10 +88,6 @@ input {
         display: inline;
     }
 
-    .container {
-        height:40px;
-    }
-
     .btn {
         background-color: #59699C; 
         color:white;  
@@ -105,10 +96,36 @@ input {
     .loginBtn {  
         margin-right:45px;
     }
+
+    #menuLogin {
+        width:100%;
+        margin-left: 7px;
+        margin-top:15px;
+
+    }
+
+    .dropdown-menu {
+        text-align: center;
+        padding:5%;
+        border: 0px;
+    }
+
+    .username {
+        margin-right:5%;
+    }
+
+    #btnLogin {
+        width:75%;
+        margin-top:0%;
+    }
+   
+
 }
 
 @media screen and (max-width: 980px) and (min-width: 769px) {     
 }
+
+
 
 @media screen and (min-width: 981px) {
 }

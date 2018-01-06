@@ -17,7 +17,7 @@ const Login = () =>
     <li className="dropdown" id="menuLogin">
     <a className="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">LOGIN</a>
     <div className="dropdown-menu">      
-    <form className="form" id="formLogin"> 
+    <form className="form" id="formLogin">  
     <input className="username" id="username" type="text" placeholder="Username"/> 
     <input className="password" id="password" type="password" placeholder="Password"/><br/>
     <button type="button" id="btnLogin" className="btn">Login</button>
@@ -25,7 +25,7 @@ const Login = () =>
        </div>
       </li>
     {/* Trigger the modal with a button */}
-      <button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">REGISTER</button>
+      <button type="button" className="formLogin" data-toggle="modal" data-target="#myModal">REGISTER</button>
       <li className="loginItems"><a href="#"><img className= "cartIcon" src = "./assets/imgs/cart.png"/>CART</a></li>     
     </ul> 
     </div>

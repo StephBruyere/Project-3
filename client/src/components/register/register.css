@@ -7,11 +7,6 @@ color: #232F3E !important;
 width:100%;
 }
 
-a {
-    color: #232F3E;  
-    padding:0px;
-}
-
 .form {
     padding:15px;
     font-family: 'Roboto', sans-serif !important;
@@ -62,10 +57,30 @@ input {
     margin-bottom:10px;
 }
 
+.register {
+    margin-bottom:5%;
+    width:80%;
+}
+.registerContainer {
+    margin-bottom:5%;
+    width:100%;
+}
+.form{
+    width:100%;
+    text-align:center;
+    display: block;
+}
+.navbar-text{
+    padding-left:0px;
+    margin-bottom:0px;
+}
+
 #btnLogin {
-    margin-top:10%;
+    width:75%;
+    margin-top:0%;
     background-color: #59699C; 
-    color:white;  
+    color:white; 
+    text-align: center; 
 }
 
 #navbar2 {
@@ -73,18 +88,14 @@ input {
 }
 
 
+
 @media screen and (max-width: 768px) and (min-width: 641px){
     .cartIcon {
         display: none;
     }
-    .navbar-nav {
-        width:30%;
+    #btnLogin {
+        margin-top:10%;  
     }
-
-    .container {
-        height:0px;
-    }
-
     .paypal {
         display: none;
     }
@@ -92,19 +103,16 @@ input {
         text-align: right;
         display: inline;
     }
-
-    .container {
-        height:40px;
-    }
-
     .btn {
         background-color: #59699C; 
         color:white;  
     }
-
     .loginBtn {  
         margin-right:45px;
     }
+    #btnLogin {
+        margin-top:2%;
+    }    
 }
 
 @media screen and (max-width: 980px) and (min-width: 769px) {     

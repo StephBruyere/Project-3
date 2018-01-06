@@ -8,13 +8,15 @@ const Register = () =>
       <div className="modal-content">
         <div className="modal-header">
           <button type="button" className="close" data-dismiss="modal">&times;</button>
-          <h4 className="modal-title">Modal Header</h4>
+          <h4 className="modal-title">Register your account</h4>
         </div>
         <div className="modal-body">
         <form className="form" id="formLogin"> 
-        <input className="Email" id="Email" type="text" placeholder="Email"/> 
-        <input className="Username" id="Username" type="text" placeholder="Username"/> 
-        
+        <ul className="navbar-text registerContainer">
+        <li><input className="register" id="Email" type="text" placeholder="email"/></li> 
+        <li><input className="register" id="Username" type="text" placeholder="username"/></li> 
+   <li><input className="register" id="Password" type="text" placeholder="password"/></li> 
+        </ul>
         <button type="button" id="btnLogin" className="btn">Submit</button>
              </form>
         </div>
