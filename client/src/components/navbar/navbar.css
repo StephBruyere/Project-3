@@ -78,12 +78,10 @@ nav.navbar.navbar-default {
 }
 
 .navbar-nav {
-    width: 50%;
+    width: 45%;
 }
 
 .spacer>li  {
-    padding-right:2%;
-    padding-left:2%;
     border-right: 1px solid #5F626B;
 }
 
@@ -101,7 +99,6 @@ nav.navbar.navbar-default {
     width: 15%;
     padding-left: 0;
     margin-left: 0px;
-
 }
 
 .form-control {
@@ -111,15 +108,19 @@ nav.navbar.navbar-default {
 
 .btnspaces {
     width: 75px;
-    background-color: #59699C;
+    background-color: #59699C !important;
     border: 0px;
     border-radius: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
 .btnIcon {
     width: 45%;
+}
+
+.searchForm {
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
 }
 
 @media screen and (max-width: 768px) and (min-width: 641px){
@@ -180,13 +181,12 @@ nav.navbar.navbar-default {
 
     .form-control {
         margin-left:0px;
-        width:80%;
     }
     .btn-default {
         display:none;
     }
 
-    .form-group {
+    .searchForm {
         display:none;
     }
 

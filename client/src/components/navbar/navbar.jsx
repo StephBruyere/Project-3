@@ -21,7 +21,7 @@ const Nav = () =>
       <div id="navbar1" className="navbar-collapse collapse">
       <form className="navbar-form navbar-right" action="/action_page.php">
       <div className="form-group">
-        <input type="text" className="form-control" placeholder="Search"/>
+        <input type="text" className="form-control searchForm" placeholder="Search"/>
       </div>
       <button type="submit" className="btn btn-default btnspaces"> <img className= "btnIcon" src = "./assets/imgs/magnifier.png"/></button>
     </form>

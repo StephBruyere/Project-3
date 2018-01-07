@@ -5,6 +5,7 @@
 .carousel-inner {
     margin-left: auto;
     margin-right: auto;  
+    max-height:450px;
 }
 
 .jumbotronContainer {
@@ -15,17 +16,21 @@
     margin: auto;
   }
 
-  @media screen and (max-width: 768px) and (min-width: 641px){
+.carousel-indicators {
+    margin-bottom:0px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px){
     .jumbotronContainer {
         margin-top:16%;
         width:100%;
         height:100%;
     }
 
-.jumbotronContainer {
-    margin-top: 0%;
-    width: 100%;
-    height: 100%;
-}
+    .jumbotronContainer {
+         margin-top: 0%;
+         width: 100%;
+         height: 100%;
+    }
 
 }
