@@ -28,9 +28,6 @@ const Jumbotron = () =>
         <img src="./assets/imgs/carousel/jet3.jpg" alt="JHH F4 Phantom"/>
       </div>
       <div className="item">
-      <img src="./assets/imgs/carousel/jet3.jpg" alt="JHH F4 Phantom"/>
-      </div>
-      <div className="item">
       <img src="./assets/imgs/carousel/jet4.jpg" alt="JHH One 9th Mirage"/>
       </div>
       <div className="item">
@@ -43,8 +40,7 @@ const Jumbotron = () =>
       <img src="./assets/imgs/carousel/jet7.jpg" alt="One 10th A7 Corsair"/>
       </div>
     </div>
-
-
+    
     <a className="left carousel-control" href="#myCarousel1" data-slide="prev">
       <span className="glyphicon glyphicon-chevron-left"></span>
       <span className="sr-only">Previous</span>

@@ -16,7 +16,7 @@
 input {
     width:200px;
     height:35px;
-    padding-left:5%;
+    padding-left:5px;
     border-radius: 3px;
     border-color:black;
     border-style: solid;
@@ -59,11 +59,14 @@ input {
 
 .register {
     margin-bottom:5%;
-    width:80%;
+    width:100%;
+    text-align: left;
 }
 .registerContainer {
+    font-family: 'Roboto', sans-serif !important;
     margin-bottom:5%;
     width:100%;
+    text-align: right;
 }
 .form{
     width:100%;
@@ -76,11 +79,18 @@ input {
 }
 
 #btnLogin {
-    width:75%;
+    width:25%;
     margin-top:0%;
     background-color: #59699C !important; 
     color:white; 
     text-align: center; 
+}
+#btnClose {
+    width:25%;
+    background-color: #5F626B !important; 
+    color:white; 
+    text-align: center; 
+    float:right;
 }
 
 button.formLogin {
@@ -91,7 +101,35 @@ button.formLogin {
     margin-right:-7%;
 }
 
-
+.modal-title {
+    text-align: center;
+    padding-bottom:1%;
+    color: #59699C;
+    font-weight: bold;  
+}
+.modalDesc {
+    text-align: center;
+}
+.regInput {
+    text-align:left;
+    color: #59699C;
+    font-weight: bold;
+}
+#Email  {
+    margin-top:5px;
+    margin-left:0px;
+    margin-bottom:10px;
+}
+#Username {
+    margin-top:5px;
+    margin-left:0px;
+    margin-bottom:10px;
+}
+#Password {
+    margin-top:5px;
+    margin-left:0px;
+    margin-bottom:25px;
+}
 
 
 @media screen and (max-width: 768px) and (min-width: 641px){
