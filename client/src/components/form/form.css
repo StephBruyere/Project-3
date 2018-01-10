@@ -31,7 +31,7 @@
         }
 
     .submitBtn {
-        background-color: #59699C; 
+        background-color: #59699C !important; 
         margin-left:5%;
         margin-top:5%;
         color:white;
