@@ -14,17 +14,32 @@ const Login = () =>
 
 <div id="navbar2" className="navbar-collapse collapse">
 <ul className="nav navbar-nav navbar-right">
-    <li className="dropdown" id="menuLogin">
-    <a className="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">LOGIN</a>
-    <div className="dropdown-menu">      
-    <form className="form" id="formLogin">  
-    <input className="username" id="username" type="text" placeholder="Username"/> 
-    <input className="password" id="password" type="password" placeholder="Password"/><br/>
-    <button type="button" id="btnLogin" className="btn">Login</button>
-         </form>
-       </div>
-      </li>
+<div className="modal fade" id="myModal4" role="dialog">
+<div className="modal-dialog">   
+  <div className="modal-content">
+    <div className="modal-header">
+      <button type="button" className="close" data-dismiss="modal">&times;</button>
+      <h4 className="modal-title">Rccrafter User Login</h4>
+      <div class="modalDesc"> Use the form below to log in to Rccrafters' account using the username and password associated with your account.</div>
+    </div>
+    <div className="modal-body">
+    <form className="form" id="formLogin"> 
+      <ul className="navbar-text registerContainer">
+        <li class="regInput2">Username<input className="register2" id="username" type="text" placeholder="username" required/></li> 
+        <li class="regInput2">Password<input className="register2" id="password" type="text" placeholder="password" required/></li> 
+      </ul>
+    <div className="modal-footer">
+    <button type="button" id="btnLogin" className="btn">Submit</button>
+    <button type="button" id="btnClose" className="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+    </form>
+    </div>
+
+  </div>  
+</div>
+</div>
     {/* Trigger the modal with a button */}
+    <button type="button" className="formLogin" data-toggle="modal" data-target="#myModal4">LOGIN</button>
       <button type="button" className="formLogin" data-toggle="modal" data-target="#myModal">REGISTER</button>
       <li className="loginItems"><a href="#"><img className= "cartIcon" src = "./assets/imgs/cart.png"/>CART</a></li>     
     </ul> 

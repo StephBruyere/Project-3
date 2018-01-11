@@ -8,6 +8,7 @@ import Contact from "./pages/contact";
 import Admin from "./pages/admin";
 import Register from "./components/register";
 import Video from "./components/video";
+import Form from "./components/form";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
       <Router>
       <div className="App">
       <Navbar />
+      <Form/>
       <Register/>
       <Video/>
       <Switch>

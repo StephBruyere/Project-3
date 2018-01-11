@@ -12,10 +12,23 @@ a {
     padding:0px;
 }
 
+.register2 {
+    margin-top:.5%;
+    margin-bottom:5%;
+    width:100%;
+    text-align: left;
+}
+
 button.formLogin {
     background-color:white;
     border-color:transparent;
     margin-top:13px;
+}
+
+.regInput2 {
+    text-align:left;
+    color: #59699C;
+    font-weight: bold;
 }
 
 .form {

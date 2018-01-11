@@ -1,13 +1,38 @@
-.search {
-    padding:5%;
-    background-color:white;
-    font-family: 'Roboto', sans-serif;
-    color: black !important;
+    .search {
+        padding:5%;
+        background-color:white;
+        font-family: 'Roboto', sans-serif;
+        color: black !important;
     }
 
     .newContainer {
         background-color:#E1E0DE;
         padding-bottom:5%;
+    }
+
+    .contactForm {
+        width:100%;
+    }
+
+    .comments1 {
+        padding:75px;
+        overflow: scroll;
+    }
+
+    .btnLogin {
+        width:25%;
+        float:right;
+        margin-top:5%;
+        background-color: #59699C !important; 
+        color:white; 
+        text-align: center; 
+    }
+    .regInput1 {
+        padding-top:2%;
+        padding-bottom:1%;
+        text-align:left;
+        color: #59699C;
+        font-weight: bold;
     }
 
     .labels {
@@ -47,7 +72,7 @@
         color: #232F3E !important;
         }
 
-        .header2{
+   .header2{
             text-align: center;
             width:100%;
             text-align:center;

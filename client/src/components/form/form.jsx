@@ -2,116 +2,55 @@ import React from "react";
 import "./form.css";
 
 const Form = props =>
-<form className="search">
-    <div className="form-group newContainer">
-    <div className="header2">Contact Us:</div>
-      <label htmlFor="contact"></label>
-      <div className ="title2"> First Name</div>
-      <input
-        value={props.search}
-        onChange={props.handleInputChange}
-        name="firstName"
-        type="text"
-        className="form-control labels"
-        placeholder="first name"
-        id=""
-      />
-      <div className ="title2"> Last Name</div>
-      <input
-        value={props.search}
-        onChange={props.handleInputChange}
-        name="lastName"
-        type="text"
-        className="form-control labels"
-        placeholder="last name"
-        id=""
-      />
-      <div className ="title2"> Address 1</div>
-      <input
-      value={props.search}
-      onChange={props.handleInputChange}
-      name="address1"
-      type="text"
-      className="form-control labels"
-      placeholder="street address"
-      id=""
-    />
-    <div className ="title2">Address 2</div>
-    <input
-    value={props.search}
-    onChange={props.handleInputChange}
-    name="address2"
-    type="text"
-    className="form-control labels"
-    placeholder="apartment or suite number"
-    id=""
-  />
-  <div className ="title2">City</div>
-    <input
-    value={props.search}
-    onChange={props.handleInputChange}
-    name="city"
-    type="text"
-    className="form-control labels"
-    placeholder="city"
-    id=""
-  />
-  <div className ="title2"> State</div>
-    <input
-    value={props.search}
-    onChange={props.handleInputChange}
-    name="state"
-    type="text"
-    className="form-control labels"
-    placeholder="state"
-    id=""
-    />
-    <div className ="title2"> Daytime Phone Number</div>
-    <input
-    value={props.search}
-    onChange={props.handleInputChange}
-    name="day"
-    type="text"
-    className="form-control labels"
-    placeholder="daytime phone number"
-    id=""
-    />
-    <div className ="title2"> Evening Phone Number</div>
-    <input
-    value={props.search}
-    onChange={props.handleInputChange}
-    name="evening"
-    type="text"
-    className="form-control labels"
-    placeholder="evening phone number"
-    id=""
-    />
-    <div className ="title2">Email</div>
-    <input
-    value={props.search}
-    onChange={props.handleInputChange}
-    name="email"
-    type="text"
-    className="form-control labels"
-    placeholder="email"
-    id=""
-    />
-    <div className ="title2"> Comments</div>
-    <input
-    value={props.search}
-    onChange={props.handleInputChange}
-    name="comments"
-    type="text"
-    className="form-control labels"
-    placeholder=""
-    id="comments"
-    />  
-      <button
-        type="submit"
-        onClick={props.handleFormSubmit}
-        className="btn submitBtn float-right" align="right">Submit
-      </button>
+  <div className="modal fade" id="myModal2" role="dialog">
+    <div className="modal-dialog">   
+      <div className="modal-content">
+        <div className="modal-header">
+          <button type="button" className="close" data-dismiss="modal">&times;</button>
+          <h4 className="modal-title">Contact Us.</h4>
+        <div class="modalDesc"> Fill out the form below to inquire about our products or contact our team. <br/>Please allow up to 24 hours to receive a response.</div>
+        </div>
+        <div className="modal-body">
+        <form className="form contactForm" id="formLogin3"> 
+        <form action="https://formspree.io/sjones11486@yahoo.com"
+        method="POST">
+        <div class="regInput1">*Full Name</div>
+        <input class="contactForm" type="text" name="name" placeholder="full name" required/>
+
+        <div class="regInput1">Street Address</div>
+        <input class="contactForm"  type="text" name="_address" placeholder="street address "/>
+
+        <div class="regInput1">Apt or Suite</div>
+        <input class="contactForm"  type="text" name="_address2" placeholder="apt or suite"/>
+
+        <div class="regInput1">City</div>
+        <input class="contactForm"  type="text" name="_city" placeholder="city"/> 
+
+        <div class="regInput1">State</div>
+        <input class="contactForm"  type="text" name="_state" placeholder="state"/> 
+
+        <div class="regInput1">*Primary Phone Number</div>
+        <input class="contactForm"  type="text" name="_phone" placeholder="primary phone" required/>
+
+        <div class="regInput1">Cell Phone Number</div>
+        <input class="contactForm"  type="tel" name="_cell" placeholder="cell phone"/>
+
+        <div class="regInput1">*Email</div>
+        <input class="contactForm"  type="email" name="_email" placeholder="email" required/>
+
+        <div class="regInput1 ">*Comments</div>
+        <input class="contactForm comments1"  type="text" name="_comments" required/>
+
+        <input class="btnLogin" type="submit" value="Send"/> 
+        </form>
+        <div className="modal-footer">
+
+        </div>
+        </form>
+        </div>
+
+      </div>  
     </div>
-  </form>
+  </div>
 
 export default Form;

@@ -25,13 +25,12 @@ const Nav = () =>
       </div>
       <button type="submit" className="btn btn-default btnspaces"> <img className= "btnIcon" src = "./assets/imgs/magnifier.png"/></button>
     </form>
-      <ul className="nav navbar-nav  spacer navbar-right ">
+      <ul className="nav navbar-nav navbar-right ">
       <li className={window.location.pathname === "/jets" ? "active" : ""}>
       <Link to="/contact">JETS </Link></li>
       <li className= {window.location.pathname === "/non-jets" ? "active" : ""}>
       <Link to="/contact">NON-JETS</Link></li>
-        <li className= {window.location.pathname === "/contact" ? "active" : ""}>
-        <Link to="/contact">CONTACT</Link></li>
+      <li><button type="button" className="formLogin1" data-toggle="modal" data-target="#myModal2">CONTACT</button></li>
       </ul>
   </div>
   </div>
