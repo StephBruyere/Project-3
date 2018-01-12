@@ -42,18 +42,13 @@ var models = require("./models");
 //***************/
 // Sync Database /
 //***************/
-models.sequelize.sync().then(function() {
- console.log('Nice! Database looks fine')
- }).catch(function(err) {
- console.log(err, "Something went wrong with the Database Update!") 
+var PORT = process.env.PORT || 8080;
+models.sequelize.sync({ force: true }).then(function() {
+        app.listen(PORT, function() {
+          console.log("App listening on PORT " + PORT);
+});
 });
 
 //**********************/
 // Start the API server /
 //**********************/
-app.listen(5000, function(err) {
-    if (!err)
-        console.log("Site is live");
-    else console.log(err)
-});
-

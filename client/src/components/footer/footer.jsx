@@ -5,14 +5,13 @@ import "./footer.css";
 const Footer = () =>
 <footer className="footer">
     <div className="container">
-        <span className="text-muted">RC CRAFTER</span><br/>
+        <span className="text-muted">Rccrafters Inc</span><br/>
         <ul className="list-inline footerStyle">
         <li className={window.location.pathname === "/" ? "active" : ""}>
-        <Link to="/contact">Home</Link></li>
+        <Link to="/">Home</Link></li>
         <li className= {window.location.pathname === "/products" ? "active" : ""}>
-        <Link to="/contact">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;&nbsp;&nbsp; &nbsp;Products &nbsp;&nbsp;&nbsp; &nbsp;|&nbsp;&nbsp; &nbsp;&nbsp;</Link></li>     
-          <li className= {window.location.pathname === "/contact" ? "active" : ""}>
-          <Link to="/contact">Contact us</Link></li>
+        <Link to="/contact">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Product&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</Link></li>     
+        <li><button type="button" className="formLogin1" data-toggle="modal" data-target="#myModal2">Contact</button></li>
         </ul>
         <ul>
         <li className="address">4646 Ashbury Park, North Olmsted, Ohio 44070</li> 

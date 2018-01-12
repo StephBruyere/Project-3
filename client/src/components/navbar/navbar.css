@@ -175,7 +175,7 @@ border-bottom-right-radius: 0px;
     }
 
     .navbar-collapse.in {
-        overflow-y:visible; 
+        overflow-y:hidden; 
     }
 
     #navbar1 {
@@ -216,6 +216,18 @@ border-bottom-right-radius: 0px;
 
     .formLogin {
         padding:2%;
+    }
+
+    .navbar-right {
+        text-align: center;
+    }
+    .formLogin1 {
+        margin-left:0px;
+        border-bottom-style:  solid;
+        border-bottom-style:1px;
+    }
+    .formLogin1 a:hover {
+        background-color:#5F626B;
     }
 }
 

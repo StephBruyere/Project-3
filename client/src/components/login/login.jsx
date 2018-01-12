@@ -11,7 +11,6 @@ const Login = () =>
 <span className="icon-bar loginBtn"><button type="button" className="btn">Login</button></span>
 </button> 
 </div>
-
 <div id="navbar2" className="navbar-collapse collapse">
 <ul className="nav navbar-nav navbar-right">
 <div className="modal fade" id="myModal4" role="dialog">
