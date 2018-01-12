@@ -86,6 +86,18 @@ button.formLogin {
     margin-top: 2.15px !important;
 }
 
+.register-color {
+    color:#59699C;
+}
+
+.login-register-desc {
+    text-align: left;
+    margin-top:-15px;
+}
+
+.modal-footer {
+    margin-top:0;
+}
 @media screen and (max-width: 768px) and (min-width: 641px){
 
     #navbar2 {

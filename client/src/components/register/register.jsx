@@ -17,6 +17,7 @@ const Register = () =>
         <li class="regInput">Username<input className="register" id="Username" type="text" placeholder="username" required/></li> 
    <li class="regInput">Password<input className="register" id="Password" type="text" placeholder="password" required/></li> 
         </ul>
+        <div className="login-register-desc">Already have an account?<button type="button" className=" register-color formLogin" data-toggle="modal" data-target="#myModal">Login Here!</button></div>
         <div className="modal-footer">
         <button type="button" id="btnLogin" className="btn">Submit</button>
         <button type="button" id="btnClose" className="btn btn-default" data-dismiss="modal">Close</button>

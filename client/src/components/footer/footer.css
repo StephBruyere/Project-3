@@ -3,6 +3,7 @@ html {
     min-height: 100%;
   }
   body {
+    display:inline-block; 
     margin-bottom: 200px; /* Margin bottom by footer height */
   }
 
@@ -19,6 +20,7 @@ html {
   }
 
   .footerStyle {
+    margin-top:1%;
     text-align: center !important;
     font-family: 'Roboto', sans-serif;
     color:#E1E0DE !important;
@@ -26,8 +28,7 @@ html {
 }
 
 .text-muted {
-    margin-top: 50px;
-    padding-bottom:25px !important;
+    margin-top:5%;
     font-size: 1.25em;
     font-weight: bold;
     font-style: italic;
@@ -44,7 +45,6 @@ html {
 }
 
 .list-inline {
-  padding-top:10px;
   padding-left: 0;
   padding-bottom:0px;
   margin-left: 0px; 

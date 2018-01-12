@@ -19,7 +19,8 @@ const Login = () =>
     <div className="modal-header">
       <button type="button" className="close" data-dismiss="modal">&times;</button>
       <h4 className="modal-title">Rccrafter User Login</h4>
-      <div class="modalDesc"> Use the form below to log in to Rccrafters' account using the username and password associated with your account.</div>
+      <div class="modalDesc"> Use the form below to log in to Rccrafters' account using the username and password associated with your account. 
+    </div>
     </div>
     <div className="modal-body">
     <form className="form" id="formLogin"> 
@@ -27,7 +28,8 @@ const Login = () =>
         <li class="regInput2">Username<input className="register2" id="username" type="text" placeholder="username" required/></li> 
         <li class="regInput2">Password<input className="register2" id="password" type="text" placeholder="password" required/></li> 
       </ul>
-    <div className="modal-footer">
+    <div className="login-register-desc">Don't have an account?<button type="button" className=" register-color formLogin" data-toggle="modal" data-target="#myModal">Sign Up Here!</button></div>
+    <div className="modal-footer"> 
     <button type="button" id="btnLogin" className="btn">Submit</button>
     <button type="button" id="btnClose" className="btn btn-default" data-dismiss="modal">Close</button>
     </div>
@@ -39,7 +41,6 @@ const Login = () =>
 </div>
     {/* Trigger the modal with a button */}
     <button type="button" className="formLogin" data-toggle="modal" data-target="#myModal4">LOGIN</button>
-      <button type="button" className="formLogin" data-toggle="modal" data-target="#myModal">REGISTER</button>
       <li className="loginItems"><a href="#"><img className= "cartIcon" src = "./assets/imgs/cart.png"/>CART</a></li>     
     </ul> 
     </div>

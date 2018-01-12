@@ -5,10 +5,12 @@ import Login from "../../components/login";
 
 const Nav = () =>
 <div className="container">
+<div>  <a href="/" className="navbar-brand"><img src ="./assets/imgs/navLogo.png"/>
+  </a></div>
 <Login />
   <nav className="navbar navbar-default">  
-  <a href="/" className="navbar-brand"><img src ="./assets/imgs/navLogo.png"/>
-  </a> 
+   
+ 
     <div className="container">
       <div className="navbar-header">
       <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
@@ -27,9 +29,9 @@ const Nav = () =>
     </form>
       <ul className="nav navbar-nav navbar-right ">
       <li className={window.location.pathname === "/jets" ? "active" : ""}>
-      <Link to="/contact">JETS </Link></li>
+      <Link to="/jet">JETS </Link></li>
       <li className= {window.location.pathname === "/non-jets" ? "active" : ""}>
-      <Link to="/contact">NON-JETS</Link></li>
+      <Link to="/non-jets">NON-JETS</Link></li>
       <li><button type="button" className="formLogin1" data-toggle="modal" data-target="#myModal2">CONTACT</button></li>
       </ul>
   </div>
