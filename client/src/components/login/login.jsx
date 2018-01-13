@@ -19,14 +19,14 @@ const Login = () =>
     <div className="modal-header">
       <button type="button" className="close" data-dismiss="modal">&times;</button>
       <h4 className="modal-title">Rccrafter User Login</h4>
-      <div class="modalDesc"> Use the form below to log in to Rccrafters' account using the username and password associated with your account. 
+      <div className="modalDesc"> Use the form below to log in to Rccrafters' account using the username and password associated with your account. 
     </div>
     </div>
     <div className="modal-body">
     <form className="form" id="formLogin"> 
       <ul className="navbar-text registerContainer">
-        <li class="regInput2">Username<input className="register2" id="username" type="text" placeholder="username" required/></li> 
-        <li class="regInput2">Password<input className="register2" id="password" type="text" placeholder="password" required/></li> 
+        <li className="regInput2">Username<input className="register2" id="username" type="text" placeholder="username" required/></li> 
+        <li className="regInput2">Password<input className="register2" id="password" type="text" placeholder="password" required/></li> 
       </ul>
     <div className="login-register-desc">Don't have an account?<button type="button" className=" register-color formLogin" data-toggle="modal" data-target="#myModal">Sign Up Here!</button></div>
     <div className="modal-footer"> 

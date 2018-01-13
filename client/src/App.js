@@ -10,29 +10,11 @@ import Jet from "./pages/jets";
 import NonJet from "./pages/non-jet";
 import Register from "./components/register";
 import Video from "./components/video";
-<<<<<<< HEAD
-import API from "./utils/API";
-=======
 import Form from "./components/form";
->>>>>>> 46f71399063d7dc3ddfaeadc05e654c1808b3cba
+import API from "./utils/API";
 
 class App extends Component {
   state = {};
-
-
- /*state = {
-    contact: [], 
-    firstName: "", 
-    lastName: "", 
-    address1: "", 
-    address2: "",
-    city: "", 
-    state: "", 
-    day: "", 
-    evening: "", 
-    email: "", 
-    comments: ""
-  };*/
 
   render() {
     return (

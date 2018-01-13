@@ -7,7 +7,7 @@ const Cards1 = props => (
     <ul>
     <li>{props.name}</li> 
     <li>{props.price}</li>
-    <li class ="btn-cart"><span onClick={() => props.removeFriend(props.id)} className="remove"/><button type="button"> Cart</button> </li>
+    <li className ="btn-cart"><span onClick={() => props.removeFriend(props.id)} className="remove"/><button type="button"> Cart</button> </li>
     </ul>
   </div>
 );

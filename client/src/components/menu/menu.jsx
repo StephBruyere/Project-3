@@ -10,12 +10,12 @@ const Menu = () =>
 <div className="panel-body">
     <section className="row text-center">
         <div className="col-6 col-sm-4">
-            <a href="/form-page"><img className="iconStyle" src="assets/imgs/menuItem1.png" alt="jet page" height="200px" 
+            <a href="/jets"><img className="iconStyle" src="assets/imgs/menuItem1.png" alt="jet page" height="200px" 
             onClick={loadJets}/></a>
             <div className="titleBtn">View Jet landing gears</div>
         </div>
         <div className="col-6 col-sm-4">
-          <a href="/menu"><img className="iconStyle" src="assets/imgs/menuItem2.png" height="200px" onClick={loadNonJets} alt="non-jet page"/></a>
+          <a href="/non-jets"><img className="iconStyle" src="assets/imgs/menuItem2.png" height="200px" onClick={loadNonJets} alt="non-jet page"/></a>
           <div className="titleBtn">View Non-Jet landing gears</div>
         </div>
         <div className="col-6 col-sm-4">
