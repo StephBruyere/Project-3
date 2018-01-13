@@ -20,6 +20,7 @@ class NonJet extends Component {
             name={Product.name}
             price={Product.price}
             image={Product.image}
+            button={Product.button}
           />  
         ))}
       </Section>

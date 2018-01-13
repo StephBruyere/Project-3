@@ -1,27 +1,18 @@
 import React from "react";
+import Product from "../../product-non-jets.json";
 import "./jet.css";
-
-class SinglePage extends React.Component {
-  handleClick = () => {
-  }
-
-  render() {
-    return (
-      <button onClick={this.handleClick} type="button" className="btn-cart" data-toggle="modal" data-target="#myModal6">View</button>
-
-    );
-  }
-}
 
 const Cards1 = props => (
   <div className="container-fluid image-container col-lg-4 col-md-4 col-sm-6">
     <img className="card" alt={props.name} src={props.image} />
     <ul>
     <li> {props.name}</li> 
-    <li>{props.price}</li>
-    <SinglePage/>
+    <li> {props.price}</li>
+    <button onClick={Product.button} type="button" className="btn-cart" data-toggle="modal" data-target="#myModal5">View</button>
     </ul>
-    <div className="modal fade" id="myModal6" role="dialog">
+
+    {/*Modal*/}
+    <div className="modal fade" id="myModal5" role="dialog">
     <div className="modal-dialog">   
       <div className="modal-content">
         <div className="modal-header">
@@ -41,7 +32,6 @@ const Cards1 = props => (
       </div>  
     </div>
   </div>
-  </div> 
+  </div>
 );
-
 export default Cards1;

@@ -1,32 +1,19 @@
 import React from "react";
+import Section from "./section";
+import Product from "../../product-non-jets.json";
 import "./non-jets.css";
-import Props from "./non-jets";
-
-
-class SinglePage extends React.Component {
-  handleClick = () => {
-
-  }
-
-  render() {
-    return (
-      <div>test</div>
-    );
-  }
-}
 
 const Cards1 = props => (
   <div className="container-fluid image-container col-lg-4 col-md-4 col-sm-6">
     <img className="card" alt={props.name} src={props.image} />
     <ul>
     <li> {props.name}</li> 
-    <li>{props.price}</li>
-    <button onClick={this.handleClick}  type="button" className="btn-cart" data-toggle="modal" data-target="#myModal5">View</button>
-    <SinglePage/>
+    <li> {props.price}</li>
+    <button onClick={Product.button} type="button" className="btn-cart" data-toggle="modal" data-target="#myModal6">View</button>
     </ul>
 
     {/*Modal*/}
-    <div className="modal fade" id="myModal5" role="dialog">
+    <div className="modal fade" id="myModal6" role="dialog">
     <div className="modal-dialog">   
       <div className="modal-content">
         <div className="modal-header">

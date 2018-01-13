@@ -54,6 +54,11 @@ nav.navbar.navbar-default {
     border-color: transparent;
 }
 
+a.navbar-brand {
+padding-left:0px;
+padding-top:10px;
+}
+
 .navbar-brand {
     z-index: 2;
     margin-left: 0px;
@@ -61,13 +66,14 @@ nav.navbar.navbar-default {
     background-color: white;
     max-width: 260px;
     position: absolute;
+    
 }
 
 .navbar-brand>img {
     padding-bottom:11px;
     margin: 0px;
     height: auto;
-    padding-left: 15%;;
+    padding-left: 15%;
     width: 100%;
     background-color: white;
     float: left;
@@ -134,7 +140,7 @@ border-bottom-right-radius: 0px;
         margin-left: 10px;
         margin-top:10px;
         padding:0px;
-        width: 150px;
+        width: 17%;
         height:0%;
         background-color: white;
         max-width: 260px;
@@ -146,6 +152,10 @@ border-bottom-right-radius: 0px;
         background-color: white;
         float: left;
     }
+
+    a.navbar-brand {
+        padding-left:0px;
+        }
     
     .navbar-header {
     float:right;
@@ -227,8 +237,9 @@ border-bottom-right-radius: 0px;
  
     }
 
-    .formLogin {
+    button.formLogin {
         padding:2%;
+        background-color: transparent;
     }
 
     .navbar-right {

@@ -1,6 +1,6 @@
 button {
     border:none !important;
-    background-color:transparent !important;
+    background-color:transparent;
 }
 
 button:active {
@@ -9,4 +9,10 @@ button:active {
 }
 
 button:focus {outline:0;}
+
+.close-btn {
+    background-color: #59699C;
+    color:white;
+}
+
 

@@ -7,6 +7,10 @@ color: #232F3E !important;
 width:100%;
 }
 
+.button.formLogin {
+    background-color: transparent !important;
+}
+
 a {
     color: #232F3E;  
     padding:0px;
@@ -20,8 +24,6 @@ a {
 }
 
 button.formLogin {
-    background-color:white;
-    border-color:transparent;
     margin-top:13px;
 }
 

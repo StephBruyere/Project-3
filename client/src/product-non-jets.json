@@ -5,7 +5,8 @@
     "name": "Palmer A-20 Havoc Strut Set",
     "price": "$495.00",
     "image":"assets/images/NonJets/16ZiroliErcoupe/16ZiroliErcoupe2.jpg",
-    "type":"Non-Jet"
+    "type":"Non-Jet",
+    "button":"button0"
   },
   {
     "id": 1,
@@ -13,7 +14,8 @@
     "name": "Palmer A-20 Havoc Strut Set",
     "price": "$495.00",
     "image":"assets/images/NonJets/A20Havoc/A20Havoc2.jpg",
-    "type":"Non-Jet"
+    "type":"Non-Jet",
+    "button":"button1"
   },
   {
     "id": 2,
@@ -21,7 +23,8 @@
     "name": "Cessna Bobcat 1/6 scale K-Flight Struts",
     "price": "$375.00",
     "image":"assets/images/NonJets/1_6CessnaBobcat/16CessnaBobcat1.jpg",
-    "type":"Non-Jet"
+    "type":"Non-Jet",
+    "button":"button2"
   },
   {
     "id": 3,
@@ -29,6 +32,7 @@
     "name": "','FJ-4 Fury 1/8th scale strut and retract set (complete bolt-in model)",
     "price": "$1395.00",
     "image":"assets/images/NonJets/1_6Bronco/16Bronco1.jpg",
-    "type":"Non-Jet"
+    "type":"Non-Jet",
+    "button":"button3"
   }
   ]

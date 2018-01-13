@@ -11,7 +11,7 @@ const Footer = () =>
         <Link to="/">Home</Link></li>
 
         <li className= {window.location.pathname === "/products" ? "active" : ""}>
-        <Link to="/products">&nbsp;Products</Link></li>  
+        <Link to="/jet">&nbsp;Products</Link></li>  
 
         <li><button type="button" className="formLogin2" data-toggle="modal" data-target="#myModal2">Contact</button></li>
         </ul>

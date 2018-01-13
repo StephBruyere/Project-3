@@ -1,8 +1,11 @@
 .iconStyle {
+    text-align: center;
+    display: inline;
     margin-top: 25px;
     font-family: 'Roboto', sans-serif;
     color: black !important;
 }
+
 
 .titleBtn {
     font-family: 'Roboto Condensed', sans-serif !important;
@@ -12,6 +15,7 @@
     line-height: 250%;
     color: #232F3E !important;
 }
+
 
 .header {
     text-align: center;
