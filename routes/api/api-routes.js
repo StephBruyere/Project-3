@@ -10,37 +10,56 @@ module.exports = function(app) {
   //**********/
   // Get Jets /
   //**********/
-   app.get("/api/nonjets", function(req, res) {
-      db.productRecord.findAll({
+  /*app.get("/api/nonjets", function(req, res) {
+    db.product.findAll({}).then(function(results) {
+      console.log(res.json(results));
+    });
+  });*/
+
+  app.get("/api/nonjets", function(req, res) {
+      db.product.findAll({
         where: {
-          type: "nonjets"
+          Type: "NonJet"
         },
-        order: [['productid', 'ASC']]
+        order: [['ProductID', 'ASC']]
       }).then(function(results) {
-        res.json(results);
+        console.log(res.json(results));
       });
   });
   //*************/
   // Get NonJets /
   //*************/
   app.get("/api/jets", function(req, res) {
-      db.productRecord.findAll({
+      db.product.findAll({
+        where: {
+          Type: "Jet"
+        },
+        order: [['ProductID', 'ASC']]
+      }).then(function(results) {
+          console.log(res.json(results));
+      });
+  });
+
+  /*app.get("/api/jets", function(req, res) {
+      console.log("api-routes jets");
+      db.ProductRecord.findAll({
         where: {
           type: "jets"
         },
         order: [['productid', 'ASC']]
       }).then(function(results) {
         res.json(results);
+        console.log(results);
       });
-  });
+  });*/
   //****************************************************************/
   // Get a single record by productid (use this for Jets or NonJets)/
   //****************************************************************/
   app.get("/api/singleproduct/:productid", function(req, res) {
     if (req.params.productid) {
-     db.productRecord.findAll({
+     db.product.findAll({
         where: {
-          productid: req.params.productid
+          ProductID: req.params.productid
         }
       }).then(function(results) {
         res.json(results);
@@ -51,7 +70,7 @@ module.exports = function(app) {
   //************************/
   // Add an contact record  /
   //************************/
-  app.post("/api/contactrecord", function(req, res) {
+  app.post("/api/saveContact", function(req, res) {
     console.log(req.body);
     db.contactRecord.create({
       firstname: req.body.firstname,

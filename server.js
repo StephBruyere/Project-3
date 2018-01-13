@@ -4,7 +4,8 @@ const session    = require('express-session');
 const passport   = require('passport');
 const bodyParser = require('body-parser');
 const path = require("path");
-var routes = require("./routes");
+
+require("./routes/api/api-routes")(app);
 //*****************************************/
 // Configure body parser for AJAX requests /
 //*****************************************/
@@ -20,8 +21,12 @@ app.use(passport.session());
 app.use(express.static("client/build"));
 //app.use(flash());
 
+
+app.get(function(req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 // Add routes, both API and view
-app.use(routes);
+//app.use(routes);
 
 //********/
 // Models /
