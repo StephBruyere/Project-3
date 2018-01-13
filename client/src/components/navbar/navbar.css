@@ -58,13 +58,13 @@ nav.navbar.navbar-default {
     z-index: 2;
     margin-left: 0px;
     width: 215px;
-    height:8%;
     background-color: white;
     max-width: 260px;
     position: absolute;
 }
 
 .navbar-brand>img {
+    padding-bottom:11px;
     margin: 0px;
     height: auto;
     padding-left: 15%;;

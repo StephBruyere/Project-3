@@ -9,11 +9,6 @@ class NonJet extends Component {
     Product
   }
 
-  singlePage = id => {
-    var x = document.getElementByClassName("card");
-    x.style.display === "none";
-  }
-
   render() {
     return (
       <Section>

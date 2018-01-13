@@ -1,15 +1,16 @@
 import React from "react";
 import "./non-jets.css";
+import Props from "./non-jets";
 
 
 class SinglePage extends React.Component {
   handleClick = () => {
+
   }
 
   render() {
     return (
-      <button onClick={this.handleClick} type="button" className="btn-cart" data-toggle="modal" data-target="#myModal5">View</button>
-
+      <div>test</div>
     );
   }
 }
@@ -20,8 +21,11 @@ const Cards1 = props => (
     <ul>
     <li> {props.name}</li> 
     <li>{props.price}</li>
+    <button onClick={this.handleClick}  type="button" className="btn-cart" data-toggle="modal" data-target="#myModal5">View</button>
     <SinglePage/>
     </ul>
+
+    {/*Modal*/}
     <div className="modal fade" id="myModal5" role="dialog">
     <div className="modal-dialog">   
       <div className="modal-content">
@@ -29,23 +33,19 @@ const Cards1 = props => (
           <button type="button" className="close" data-dismiss="modal">&times;</button>
           <h4 className="modal-title">{props.name}</h4>
         </div>
+        <div className="priceStyle">PRICE: {props.price}</div>
         <div className="modal-body">
-        <div className="modalDesc"> {props.price}</div>
         <ul className="navbar-text registerContainer">
         <img className="card" alt={props.name} src={props.image} />
         </ul>
         <div className="modal-footer">
-        <button type="button" id="btnLogin" className="btn">Cart</button>
-        <button type="button" id="btnClose" className="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" id="btnLogin" className="btn">CART</button>
+        <button type="button" id="btnClose" className="btn btn-default" data-dismiss="modal">Back</button>
         </div>
         </div>
       </div>  
     </div>
   </div>
   </div>
-
-
-  
-  
 );
 export default Cards1;
